@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "sass/_variable.scss",
+        "sass/_mixins.scss",
+        "sass/_typo.scss",
+        "sass/_global.scss",
+        "sass/header/_site-branding.scss",
+        "sass/header/_site-nav.scss",
+        "sass/header/_site-navbar.scss",
+        "sass/footer/_site-footer-branding.scss",
+        "sass/footer/_site-footer-nav.scss",
+        "sass/footer/_site-footer-info.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
