@@ -58,14 +58,14 @@ function inb_customize_register( $wp_customize ) {
 	$wp_customize->add_setting( 'latitude' );
     $wp_customize->add_control( 'latitude', array(
         'label' => __( 'Latitude', 'inb' ),
-        'type' => 'text',
+        'type' => 'number',
         'section' => 'map',
     ) );
 
     $wp_customize->add_setting( 'longitude' );
     $wp_customize->add_control( 'longitude', array(
         'label' => __( 'Longitude' , 'inb' ),
-        'type' => 'text',
+        'type' => 'number',
         'section' => 'map',
     ) );
     // End Map

@@ -5,6 +5,9 @@
         <?php else : ?>
         <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
         <?php endif; ?>
+        <?php if ( function_exists('yoast_breadcrumb') ) { ?>
+        <?php  yoast_breadcrumb( '<p id="breadcrumbs">','</p>' ); ?>
+        <?php } ?>
     </header>
     <div class="entry-content">
         <?php the_content(); ?>

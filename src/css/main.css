@@ -40,7 +40,6 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
   padding-top: 1px;
-  background-color: red;
 }
 
 .container-fluid {
@@ -81,6 +80,13 @@ body {
 
 .go-to-to-active {
   bottom: 10px !important;
+}
+
+#map {
+  height: 480px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 }
 
 #header {
@@ -406,16 +412,21 @@ article .entry-header {
   position: relative;
   text-align: center;
   background-color: #f4f4f4;
+  padding: 50px 0px;
 }
 
 article .entry-header .entry-title {
   margin: 0;
-  padding: 50px 15px;
+  padding: 0 15px;
   font-size: 4rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #101820;
+}
+
+article .entry-header #breadcrumbs {
+  padding: 0 15px;
 }
 
 article .entry-content {

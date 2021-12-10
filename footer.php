@@ -1,4 +1,7 @@
   </div>
+  <section>
+      <div id="map"></div>
+  </section>
   </main>
   <footer id="footer">
       <div class="container-fluid">
@@ -28,7 +31,6 @@
               stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
       </g>
   </svg>
-
   <?php wp_footer(); ?>
   </body>
 
