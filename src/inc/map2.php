@@ -62,13 +62,11 @@ wp_add_inline_script( 'map-js', '
             title: "IT Holding Warszawa",
             icon:"' .get_template_directory_uri() . '/src/img/pin.png",
         });
-
-        infowindow.open({
-            anchor: marker,
-            map,
-            shouldFocus: false,
-        });
-        
+ infowindow.open({
+                anchor: marker,
+                map,
+                shouldFocus: false,
+            });
         marker.addListener("click", () => {
             infowindow.open({
                 anchor: marker,

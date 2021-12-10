@@ -44,7 +44,7 @@ body {
 
 .container-fluid {
   width: calc(100% - 30px);
-  max-width: 1700px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -84,9 +84,21 @@ body {
 
 #map {
   height: 480px;
-  /* The height is 400 pixels */
   width: 100%;
-  /* The width is the width of the web page */
+  margin-top: 50px;
+}
+
+#tooltip-map {
+  min-width: 200px;
+  text-align: center;
+}
+
+#tooltip-map p {
+  font-size: 16px;
+}
+
+#tooltip-map .btn {
+  margin: 0 auto;
 }
 
 #header {
@@ -464,5 +476,10 @@ article .entry-content {
 
 .btn-main:focus {
   background-color: #00a512;
+}
+
+.btn-small {
+  padding: 5px 10px;
+  font-size: 12px;
 }
 /*# sourceMappingURL=main.css.map */

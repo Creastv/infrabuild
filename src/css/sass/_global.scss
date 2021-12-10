@@ -10,8 +10,11 @@ body {
 
 .container-fluid {
   width: calc(100% - 30px);
-  max-width: 1700px;
+  max-width: 1400px;
   margin: 0 auto;
+  // @media #{$xlg} {
+  //   max-width: 1100px;
+  // }
 }
 
 #ornament-header {
@@ -46,7 +49,18 @@ body {
 
 #map {
   height: 480px;
-  /* The height is 400 pixels */
   width: 100%;
-  /* The width is the width of the web page */
+  margin-top: 50px;
+}
+
+#tooltip-map {
+  min-width: 200px;
+  text-align: center;
+  p {
+    font-size: 16px;
+  }
+  .btn {
+    // width: 150px;
+    margin: 0 auto;
+  }
 }

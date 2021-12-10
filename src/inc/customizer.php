@@ -55,19 +55,64 @@ function inb_customize_register( $wp_customize ) {
 	'priority' => 115,
 	) );
 
-	$wp_customize->add_setting( 'latitude' );
+    // Display map
+    $wp_customize->add_setting( 'd-map', array(
+        'default' => 12,
+    ) );
+    $wp_customize->add_control( 'd-map', array(
+        'label' => __( 'Display map' , 'inb' ),
+        'type' => 'checkbox',
+        'section' => 'map',
+    ) );
+
+    // Lat
+	$wp_customize->add_setting( 'latitude', array(
+        'default' => 54.3823818,
+    ) );
     $wp_customize->add_control( 'latitude', array(
         'label' => __( 'Latitude', 'inb' ),
         'type' => 'number',
         'section' => 'map',
     ) );
-
-    $wp_customize->add_setting( 'longitude' );
+    // Lon
+    $wp_customize->add_setting( 'longitude', array(
+        'default' => 18.6739476,
+    ));
     $wp_customize->add_control( 'longitude', array(
         'label' => __( 'Longitude' , 'inb' ),
         'type' => 'number',
         'section' => 'map',
     ) );
+    // Zoom
+    $wp_customize->add_setting( 'zoom', array(
+        'default' => 12,
+    ) );
+    $wp_customize->add_control( 'zoom', array(
+        'label' => __( 'Zoom' , 'inb' ),
+        'type' => 'number',
+        'section' => 'map',
+    ) );
+
+    // Info address
+	$wp_customize->add_setting( 'inf-address', array(
+        'default' => 'Your Address',
+    ) );
+    $wp_customize->add_control( 'inf-address', array(
+        'label' => __( 'inf-address', 'inb' ),
+        'type' => 'textarea',
+        'section' => 'map',
+    ) );
+
+    // Info address
+	$wp_customize->add_setting( 'link-map', array(
+        'default' => 'https://google.map.com/',
+    ) );
+    $wp_customize->add_control( 'link-map', array(
+        'label' => __( 'Link to map', 'inb' ),
+        'type' => 'text',
+        'section' => 'map',
+    ) );
+
     // End Map
 
 }
