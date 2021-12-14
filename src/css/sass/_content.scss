@@ -18,6 +18,9 @@ article {
       text-transform: uppercase;
       letter-spacing: 2px;
       color: $black;
+      @media #{$sm} {
+        font-size: 2.4rem;
+      }
     }
     #breadcrumbs {
       padding: 0 15px;
