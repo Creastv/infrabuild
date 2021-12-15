@@ -49,6 +49,17 @@ body {
           box-sizing: border-box;
 }
 
+::-moz-selection {
+  /* Code for Firefox */
+  color: #fff;
+  background: #00aa13;
+}
+
+::selection {
+  color: #fff;
+  background: #00aa13;
+}
+
 .container-fluid {
   width: calc(100% - 30px);
   max-width: 1400px;
@@ -116,7 +127,7 @@ body {
   z-index: 999;
   -webkit-transition: all 1s;
   transition: all 1s;
-  padding-top: 5px;
+  padding-top: 0px;
 }
 
 #header .header-nav-wraper {
@@ -159,11 +170,19 @@ body {
 .nav-brand a {
   max-width: 300px;
   display: block;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .nav-brand a img {
   width: 100%;
   height: auto;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.off-disturb .nav-brand a {
+  max-width: 150px;
 }
 
 @media only screen and (max-width: 998px) {
@@ -227,6 +246,12 @@ body {
   font-size: 18px;
   font-weight: 700;
   color: #101820;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.header-nav .header-nav-list li a:hover {
+  background-color: #d9d9d6;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -246,6 +271,11 @@ body {
 }
 
 .header-nav .header-nav-list .current-menu-item a {
+  background-color: #00aa13;
+  color: #fff;
+}
+
+.header-nav .header-nav-list .current-menu-item a:hover {
   background-color: #00aa13;
   color: #fff;
 }
@@ -326,6 +356,23 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+#ornament-footer {
+  position: relative;
+  width: 10%;
+  -webkit-transform: translateY(35px);
+          transform: translateY(35px);
+}
+
+#ornament-footer svg {
+  opacity: 0.1;
+  position: absolute;
+  bottom: 0;
+}
+
+#ornament-footer svg path {
+  fill: #00aa13;
 }
 
 .brand {

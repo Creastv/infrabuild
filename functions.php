@@ -20,7 +20,7 @@ add_action( 'wp_enqueue_scripts', 'inb_scripts' );
 
 require get_template_directory() . '/src/inc/customizer.php';
 if(get_theme_mod('d-map') ) {
-require get_template_directory() . '/src/inc/map2.php';
+require get_template_directory() . '/src/inc/map.php';
 }
 
 

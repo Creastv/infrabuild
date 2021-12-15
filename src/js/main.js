@@ -6,6 +6,14 @@
   const headerNav = document.querySelector(".header-nav");
   let navFlag = false;
   const goToTop = document.querySelector("#go-to-top");
+  const ornmentFooter = document.querySelector("#ornament-footer");
+
+  // Add ornament in footer
+  setTimeout(() => {
+    ornmentFooter.innerHTML = ` <svg xml:space="preserve" viewBox="0 0 248 222">
+        <path d="M116.8 118.6 145.3 90l-90-90L0 55.3v57.1l55.3-55.3zM248 192.8l-90-90.1-28.6 28.6 61.5 61.5-29.2 29.2h57.1z" class="st0"/>
+    </svg>`;
+  }, 1500);
 
   // Go to Top
   goToTop.addEventListener("click", () => {
@@ -27,6 +35,12 @@
     } else {
       header.classList.remove("header-sticky");
       body.style.paddingTop = "0px";
+    }
+
+    if (window.pageYOffset >= 400) {
+      header.classList.add("off-disturb");
+    } else {
+      header.classList.remove("off-disturb");
     }
   });
 

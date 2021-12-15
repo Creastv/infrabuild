@@ -1,4 +1,5 @@
   </div>
+<div id="ornament-footer"></div>
   <?php if(get_theme_mod('d-map') ) { ?>
   <section>
       <div id="map"></div>

@@ -13,3 +13,18 @@
     }
   }
 }
+
+#ornament-footer {
+  position: relative;
+  width: 10%;
+  transform: translateY(35px);
+  svg {
+    opacity: 0.1;
+    position: absolute;
+    bottom: 0;
+    path {
+      fill: #00aa13;
+    }
+  }
+  // bottom: 0;
+}
