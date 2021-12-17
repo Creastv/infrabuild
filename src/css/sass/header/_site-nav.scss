@@ -64,6 +64,28 @@
   }
 }
 
+.icon-home {
+  span {
+    background: url(../img/ico-home.svg);
+    width: 25px;
+    height: 20px;
+    font-size: 0px;
+    opacity: 0.8;
+  }
+}
+.current_page_item.icon-home {
+  a {
+    background: none !important;
+    span {
+      opacity: 1;
+    }
+  }
+}
+.lang-item {
+  a {
+    background-color: #d9d9d6;
+  }
+}
 // js
 .header-nav-active {
   max-height: 80vh;

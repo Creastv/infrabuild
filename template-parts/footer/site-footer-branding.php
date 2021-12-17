@@ -1,6 +1,6 @@
  <?php
  $logoFooter   =  get_theme_mod('logo-footer');
- $descFooter   =  get_theme_mod('desc');
+ if (pll_current_language() == 'en') { $descFooter   =  get_theme_mod('desc-en'); } else { $descFooter   =  get_theme_mod('desc');}
  $blog_info    = get_bloginfo( 'name' );
  $description  = get_bloginfo( 'description' );
  ?>

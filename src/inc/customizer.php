@@ -34,6 +34,13 @@ function inb_customize_register( $wp_customize ) {
         'section' => 'footer',
     ) );
 
+    $wp_customize->add_setting( 'desc-en' );
+    $wp_customize->add_control( 'desc-en', array(
+        'label' => __( 'Description - EN', 'inb' ),
+        'type' => 'textarea',
+        'section' => 'footer',
+    ) );
+    
 	$wp_customize->add_setting( 'copyright-left' );
     $wp_customize->add_control( 'copyright-left', array(
         'label' => __( 'Copyrights (Left)', 'inb' ),
@@ -41,8 +48,22 @@ function inb_customize_register( $wp_customize ) {
         'section' => 'footer',
     ) );
 
+    $wp_customize->add_setting( 'copyright-left-en' );
+    $wp_customize->add_control( 'copyright-left-en', array(
+        'label' => __( 'Copyrights (Left)', 'inb' ),
+        'type' => 'text',
+        'section' => 'footer',
+    ) );
+  
     $wp_customize->add_setting( 'copyright-right' );
     $wp_customize->add_control( 'copyright-right', array(
+        'label' => __( 'Copyrights (right)', 'inb' ),
+        'type' => 'text',
+        'section' => 'footer',
+    ) );
+
+    $wp_customize->add_setting( 'copyright-right-en' );
+    $wp_customize->add_control( 'copyright-right-en', array(
         'label' => __( 'Copyrights (right)', 'inb' ),
         'type' => 'text',
         'section' => 'footer',
@@ -103,7 +124,17 @@ function inb_customize_register( $wp_customize ) {
         'section' => 'map',
     ) );
 
-    // Info address
+     // Info address
+	$wp_customize->add_setting( 'inf-address-en', array(
+        'default' => 'Your Address',
+    ) );
+    $wp_customize->add_control( 'inf-address-en', array(
+        'label' => __( 'inf-address EN', 'inb' ),
+        'type' => 'textarea',
+        'section' => 'map',
+    ) );
+
+    // Link map
 	$wp_customize->add_setting( 'link-map', array(
         'default' => 'https://google.map.com/',
     ) );

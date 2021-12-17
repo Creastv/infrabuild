@@ -1,6 +1,6 @@
  <?php
-  $copyLeft   =  get_theme_mod('copyright-left');
-  $copyRight   =  get_theme_mod('copyright-right');
+  if (pll_current_language() == 'en') {  $copyLeft   =  get_theme_mod('copyright-left-en'); } else {  $copyLeft   =  get_theme_mod('copyright-left');}
+  if (pll_current_language() == 'en') {  $copyRight  =  get_theme_mod('copyright-right-en'); } else {  $copyRight  =  get_theme_mod('copyright-right');}
  ?>
  <div id="info">
      <div class="col">
