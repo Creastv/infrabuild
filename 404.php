@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="error" class="container-fluid">
+<div id="error" class="">
     <div class="row">
         <div class="col text-center">
             <h1>404</h1>

@@ -40,6 +40,7 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
   padding-top: 1px;
+  max-width: 100%;
 }
 
 *,
@@ -470,18 +471,20 @@ body {
   }
 }
 
-main {
-  overflow: hidden;
-}
-
 article .entry-header {
-  width: 100vw;
-  margin-left: -50vw;
-  left: 50%;
+  width: calc(100vw - 20px);
+  margin-left: calc(-50vw + 50% + 10px);
   position: relative;
   text-align: center;
   background-color: #f4f4f4;
   padding: 50px 0px;
+}
+
+@media only screen and (max-width: 460px) {
+  article .entry-header {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
 }
 
 article .entry-header .entry-title {
